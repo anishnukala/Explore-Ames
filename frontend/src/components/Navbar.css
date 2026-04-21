@@ -1,0 +1,149 @@
+Remove default body spacing
+body {
+  margin: 0;
+}
+
+/* NAVBAR ROOT */
+.navbar {
+  width: 100%;
+  background-color: #e6f7d9;
+  height: 72px;
+  border-bottom: 1px solid #d1eacb;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+}
+
+/* INNER WRAPPER */
+.nav-inner {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.nav-logo img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* CENTER NAV LINKS */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #1d3b2a;            /* same dark green as Log in pill */
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Underline effect on hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #1d3b2a;
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* SIGN UP – plain text, NOT purple, NOT underlined */
+.signup-text {
+  color: #1d3b2a;           
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signup-text:hover {
+  opacity: 0.8;
+}
+
+/* LOG IN – dark green pill */
+.login-pill {
+  background: #347751;
+  color: #fff !important; /* force white */
+  padding: 10px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-pill:hover {
+  filter: brightness(1.08);
+}
+
+/* Prevent purple visited color */
+.signup-text:visited,
+.login-pill:visited {
+  color: inherit;
+}
+
+.cart-icon-wrapper {
+  position: relative;
+  margin-right: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  color: #1d3b2a;
+  transition: 0.2s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #2f6b34;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 999px;
+}

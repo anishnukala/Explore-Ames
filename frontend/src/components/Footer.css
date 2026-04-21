@@ -1,0 +1,8 @@
+.footer-strip {
+  width: 100%;
+  background: #367652;      /* same as login pill */
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 8px 0;            /* thin strip */
+}

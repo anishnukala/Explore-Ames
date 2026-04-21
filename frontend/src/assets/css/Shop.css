@@ -1,0 +1,281 @@
+.shop-page {
+  min-height: 100vh;
+  background-color: #f3ffe8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  color: #234325;
+}
+
+/* HERO – match Diners hero size */
+.shop-hero-wrapper {
+  width: 100%;
+  padding: 40px 16px 32px;   /* same as .diners-hero */
+  display: flex;
+  justify-content: center;
+}
+
+.shop-hero-card {
+  max-width: 900px;          /* same width as diners-hero-inner */
+  width: 100%;
+  padding: 32px 24px;        /* same padding as diners-hero-inner */
+  border-radius: 24px;       /* same radius */
+  background: #e6f6db;       /* same background color */
+  /* you can keep a subtle gradient if you want:
+     background: radial-gradient(circle at top left, #f7ffe9, #e0f4cf); */
+  box-shadow: 0 18px 40px rgba(26, 71, 35, 0.12);  /* same shadow */
+  text-align: center;
+}
+
+/* Make all hero cards same height and centered */
+.shop-hero-card {
+  min-height: 100px;           /* adjust this number until it feels right */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 18px 40px rgba(26, 71, 35, 0.12);  /* same shadow */
+  text-align: center;
+}
+
+.shop-pill {
+  display: inline-block;
+  padding: 6px 22px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background-color: #d1ebc3;
+  color: #264d2c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.shop-hero-title {
+  font-size: 2.1rem;        /* match diners-title size */
+  line-height: 1.25;
+  color: #214226;
+  margin-bottom: 8px;
+}
+
+.shop-hero-subtitle {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #536b4a;
+}
+
+/* rest of your CSS stays the same */
+.shop-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 16px 40px;
+}
+
+/* ... keep everything below exactly as you already have ... */
+
+.shop-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.shop-filter-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid #d0e6c7;
+  background: #f6ffed;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #345337;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.shop-filter-btn:hover {
+  background: #e6f7d9;
+}
+
+.shop-filter-btn-active {
+  background: #2f6b34;
+  border-color: #2f6b34;
+  color: #ffffff;
+}
+
+.shop-loading {
+  text-align: center;
+  color: #495f46;
+  padding: 40px 0;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+
+.shop-card {
+  background: #ffffff;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.08);
+}
+
+.shop-card-image-wrapper {
+  height: 230px;
+  background: #c7dfc8;
+  overflow: hidden;
+}
+
+.shop-card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop-card-body {
+  padding: 16px 18px 18px;
+  text-align: center;
+}
+
+.shop-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #234325;
+  margin-bottom: 6px;
+}
+
+.shop-card-description {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #5b6f5a;
+  margin-bottom: 8px;
+}
+
+.shop-card-price {
+  font-weight: 700;
+  color: #204822;
+  margin-bottom: 12px;
+}
+
+.shop-card-button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 9px;
+  border-radius: 999px;
+  border: none;
+  background-color: #2f6b34;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.12s ease, transform 0.12s ease;
+}
+
+.shop-card-button:hover {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+
+.shop-footer {
+  text-align: center;
+  padding: 16px 0 22px;
+  font-size: 0.85rem;
+  color: #3e583e;
+  background: #d2eacb;
+  border-top: 1px solid #c2dcbc;
+}
+
+@media (max-width: 960px) {
+  .shop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .shop-hero-card {
+    padding: 28px 18px 24px;
+  }
+
+  .shop-hero-title {
+    font-size: 1.6rem;
+  }
+
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-card-image-wrapper {
+    height: 210px;
+  }
+}
+
+/* ========================= */
+/* Reviews Box (FIXED + SCROLL) */
+/* ========================= */
+
+.review-list.review-scroll-box {
+  height: 165px;              /* EXACT height for ~3 reviews */
+  overflow-y: auto;           /* scroll inside box */
+  padding: 10px 12px;
+  margin: 10px 0;
+
+  background: #f6ffed;
+  border: 1px solid #d0e6c7;
+  border-radius: 14px;
+}
+
+/* Individual review */
+.review-item {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+/* Review header */
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #234325;
+}
+
+.review-user {
+  color: #234325;
+}
+
+.review-rating {
+  color: #2f6b34;
+  font-weight: 700;
+}
+
+/* Review text */
+.review-text {
+  margin-top: 4px;
+  font-size: 0.82rem;
+  line-height: 1.2rem;
+  color: #5b6f5a;
+}
+
+/* Empty state */
+.review-empty {
+  margin: 0;
+  font-size: 0.82rem;
+  opacity: 0.7;
+}

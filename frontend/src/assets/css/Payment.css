@@ -1,0 +1,172 @@
+/* src/assets/css/Payment.css */
+
+/* =========================
+   FORCE CENTER PAYMENT CARD
+   ========================= */
+
+.payment-page {
+  min-height: 100vh;
+  background: #f3ffe8;
+
+  display: flex;              /* ✅ enable flex */
+  align-items: center;        /* ✅ vertical center */
+  justify-content: center;    /* ✅ horizontal center */
+
+  padding: 32px 16px;
+  box-sizing: border-box;
+}
+
+
+.payment-card {
+  width: 100%;
+  max-width: 480px;          /* final chosen width */
+  margin: 0 auto;            /* horizontal centering */
+
+  background: #ffffff;
+  border-radius: 26px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.08);
+  padding: 24px 22px 26px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  color: #234325;
+}
+
+.payment-header {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.payment-pill {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: #e5f6d3;
+  color: #264d2c;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.payment-title {
+  margin: 8px 0 4px;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.payment-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #556a56;
+}
+
+/* Summary block */
+.payment-summary {
+  margin: 14px 0 16px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: #f4fff0;
+}
+
+.payment-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.86rem;
+  color: #435649;
+  margin-bottom: 4px;
+}
+
+.payment-summary-total {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px dashed #c6ddc0;
+  font-weight: 700;
+  color: #214226;
+}
+
+/* Form */
+.payment-form {
+  margin-top: 4px;
+}
+
+.payment-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.payment-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #264d2c;
+}
+
+.payment-field input {
+  border-radius: 10px;
+  border: 1px solid #c9ddc3;
+  padding: 10px 11px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.payment-field input:focus {
+  border-color: #2f6b34;
+  box-shadow: 0 0 0 2px rgba(47, 107, 52, 0.14);
+}
+
+.payment-row {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-row .payment-field {
+  flex: 1;
+}
+
+.payment-error {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  color: #b00020;
+}
+
+/* Button */
+.payment-button {
+  width: 100%;
+  margin-top: 8px;
+  border: none;
+  border-radius: 999px;
+  padding: 11px 0;
+  background: #2f6b34;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.05s ease;
+}
+
+.payment-button:hover:not(:disabled) {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+
+.payment-button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+/* Secure note */
+.payment-secure {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: #5b6f5a;
+}
+
+.payment-lock {
+  font-size: 0.9rem;
+}

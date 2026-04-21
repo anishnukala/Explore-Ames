@@ -1,0 +1,303 @@
+/* PAGE BACKGROUND */
+.diners-page {
+  min-height: 100vh;
+  background: #f3ffe8;
+  padding-bottom: 40px;
+}
+
+/* HERO */
+.diners-hero {
+  width: 100%;
+  padding: 40px 16px 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.diners-hero-inner {
+  max-width: 900px;
+  width: 100%;
+  background: #e6f6db;
+  border-radius: 24px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(26, 71, 35, 0.12);
+}
+
+.diners-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #d1ebc3;
+  color: #264d2c;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.diners-title {
+  font-size: 2.1rem;
+  color: #264d2c;
+  margin: 0 0 8px;
+}
+
+.diners-subtitle {
+  margin: 0;
+  color: #506454;
+  font-size: 0.95rem;
+}
+
+/* FILTER BAR */
+.diners-filters {
+  max-width: 980px;
+  margin: 18px auto 10px;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.diners-filter-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid #d4e7cf;
+  background: #f4fff0;
+  color: #345237;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.diners-filter-btn:hover {
+  background: #e3f6da;
+}
+
+.diners-filter-btn-active {
+  background: #2f6b34;
+  color: #ffffff;
+  border-color: #2f6b34;
+}
+
+/* GRID SECTION */
+.diners-grid-section {
+  max-width: 1180px;
+  margin: 18px auto 0;
+  padding: 0 16px;
+}
+
+/* GRID – 2 SMALLER CARDS PER ROW */
+.diners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 760px;
+  margin: 20px auto;
+  padding: 0;
+}
+
+/* CARD – compact, rounded */
+.diner-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 360px;
+}
+
+/* IMAGE – shorter */
+.diner-image-wrapper {
+  height: 150px;
+  overflow: hidden;
+}
+
+.diner-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BODY – tighter spacing */
+.diner-body {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.diner-name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #264d2c;
+}
+
+/* META INFO – all lines same spacing */
+.diner-meta {
+  margin: 4px 0;
+}
+
+.diner-meta p,
+.diner-meta-line {
+  margin: 4px 0;
+  font-size: 0.85rem;
+  color: #435649;
+  line-height: 1.4;
+}
+
+.diner-label {
+  font-weight: 600;
+  color: #264d2c;
+}
+
+/* Rating text line (no stars) */
+.diner-rating-line {
+  margin: 4px 0 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #264d2c;
+}
+
+/* INTERACTIVE STAR RATING BELOW "Rating: 4.7" */
+.star-rating-container {
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 1024px) {
+  .diners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .diners-hero-inner {
+    border-radius: 18px;
+    padding: 24px 18px;
+  }
+
+  .diners-title {
+    font-size: 1.7rem;
+  }
+
+  .diners-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .diner-image-wrapper {
+    height: 180px;
+  }
+}
+
+/* FORM SECTION (unchanged) */
+.diners-form-section {
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+  padding: 0 16px;
+}
+
+.diners-form-card {
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.08);
+  padding: 24px 24px 28px 24px;
+}
+
+.diners-form-group {
+  margin-bottom: 18px;
+}
+
+.diners-form-label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #264d2c;
+  margin-bottom: 6px;
+}
+
+.diners-form-select,
+.diners-form-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5c0;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.diners-form-select:focus,
+.diners-form-textarea:focus {
+  outline: none;
+  border-color: #1d3b2a;
+  box-shadow: 0 0 0 2px rgba(29, 59, 42, 0.12);
+}
+
+.diners-form-hint {
+  font-size: 0.8rem;
+  color: #607163;
+  margin-top: 4px;
+}
+
+.stars-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 34px;
+}
+
+.star-on { color: #1d3b2a; }
+.star-off { color: #cfd8cf; }
+
+.submit-review-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 999px;
+  background: #1d3b2a;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-review-box {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #f4fff0;
+  border: 1px solid #d4e7cf;
+  text-align: center;
+}
+
+.login-review-text {
+  margin: 0 0 10px 0;
+  color: #345237;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.login-review-btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  background: #1d3b2a;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-review-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

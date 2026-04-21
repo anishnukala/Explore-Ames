@@ -1,0 +1,151 @@
+/* ===============================
+   PAGE BASE
+================================ */
+.authors-page {
+  min-height: 100vh;
+  background: #f3ffe8;
+  padding-bottom: 60px;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.authors-hero {
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px 24px;
+}
+
+.authors-hero-inner {
+  width: 100%;
+  max-width: 1100px;
+  background: #e6f6db;
+  border-radius: 22px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 14px 32px rgba(26, 71, 35, 0.12);
+}
+
+.authors-pill {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #d1ebc3;
+  color: #264d2c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.authors-title {
+  margin: 0 0 10px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #264d2c;
+}
+
+.authors-subtitle {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #506454;
+}
+
+/* ===============================
+   GRID
+================================ */
+.authors-grid-section {
+  padding: 28px 16px 0;
+}
+
+.authors-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* ===============================
+   CARD
+================================ */
+.author-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   IMAGE (CRITICAL PART)
+   SAME SIZE ALWAYS
+================================ */
+.author-imgWrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* forces same height & width */
+  overflow: hidden;
+  background: #eef7ea;
+}
+
+.author-imgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* fills container evenly */
+  object-position: center;
+  display: block;
+}
+
+/* ===============================
+   BODY
+================================ */
+.author-body {
+  padding: 16px 18px 18px;
+}
+
+.author-name {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.author-title {
+  font-size: 0.9rem;
+  color: #5c5c5c;
+  margin-bottom: 6px;
+}
+
+.author-email {
+  font-size: 0.9rem;
+  color: #5c5c5c;
+  margin-bottom: 10px;
+}
+
+.author-bio {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #2a2a2a;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .authors-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .authors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .authors-hero-inner {
+    padding: 22px 18px;
+  }
+}

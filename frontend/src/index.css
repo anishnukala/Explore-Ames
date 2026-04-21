@@ -1,0 +1,139 @@
+/* ===== PAGE BACKGROUND ===== */
+.admin-page {
+  min-height: 100vh;
+  background: #f3ffe8;
+  padding: 32px 16px 48px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  color: #234325;
+}
+
+/* ===== PAGE CONTAINER ===== */
+.admin-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #264d2c;
+}
+
+.admin-subtitle {
+  font-size: 0.9rem;
+  color: #4a5b4c;
+  margin-top: 4px;
+}
+
+/* ===== PRIMARY BUTTON ===== */
+.admin-primary-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  background: #2f6b34;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-primary-btn:hover {
+  filter: brightness(0.94);
+}
+
+/* ===== CARD ===== */
+.admin-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 22px 24px;
+  box-shadow: 0 18px 40px rgba(26, 71, 35, 0.12);
+}
+
+/* ===== TABLE ===== */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.admin-table thead {
+  background: #e6f6db;
+}
+
+.admin-table th {
+  padding: 14px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #264d2c;
+  text-align: left;
+}
+
+.admin-table td {
+  padding: 14px 12px;
+  font-size: 0.9rem;
+  color: #234325;
+  border-top: 1px solid #e2eedf;
+}
+
+.admin-table tbody tr:hover {
+  background: #f9fff6;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.admin-action-btn {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-edit-btn {
+  background: #d1ebc3;
+  color: #264d2c;
+  margin-right: 6px;
+}
+
+.admin-edit-btn:hover {
+  filter: brightness(0.95);
+}
+
+.admin-delete-btn {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.admin-delete-btn:hover {
+  filter: brightness(0.95);
+}
+
+/* ===== EMPTY STATE ===== */
+.admin-empty {
+  text-align: center;
+  padding: 32px 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .admin-title {
+    font-size: 1.6rem;
+  }
+}

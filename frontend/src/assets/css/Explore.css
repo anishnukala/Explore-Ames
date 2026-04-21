@@ -1,0 +1,165 @@
+/* PAGE BACKGROUND */
+.explore-page {
+  min-height: 100vh;
+  background: #f3ffe8;
+  padding-bottom: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  color: #234325;
+}
+
+/* HERO SECTION */
+.page-header {
+  width: 100%;
+  padding: 40px 16px 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-box {
+  max-width: 900px;
+  width: 100%;
+  background: #e6f6db;
+  border-radius: 24px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(26, 71, 35, 0.12);
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 20px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background: #d1ebc3;
+  color: #264d2c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.content-box h1 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #1d3b2a;
+  margin-bottom: 8px;
+}
+
+.content-box p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #4a5b47;
+  line-height: 1.6;
+}
+
+/* MAP SECTION */
+.explore-map-wrapper {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.explore-map-card {
+  width: 100%;
+  background: #e6f6db;
+  padding: 24px 22px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(26, 71, 35, 0.12);
+}
+
+.explore-map-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #264d2c;
+  margin-bottom: 16px;
+}
+
+.explore-map-card iframe {
+  width: 100%;
+  height: 420px;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+/* FAMOUS PLACES */
+.explore-places {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 18px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #264d2c;
+  margin-bottom: 28px;
+}
+
+/* PLACES GRID */
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.place-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 48px rgba(0, 0, 0, 0.12);
+}
+
+.place-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.place-body {
+  padding: 16px 20px;
+}
+
+.place-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #234325;
+  margin-bottom: 6px;
+}
+
+.place-desc {
+  font-size: 0.9rem;
+  color: #536b4a;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .places-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explore-map-card iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-box h1 {
+    font-size: 1.7rem;
+  }
+
+  .explore-map-card iframe {
+    height: 300px;
+  }
+}

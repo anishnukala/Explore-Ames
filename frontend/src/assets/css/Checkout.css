@@ -1,0 +1,583 @@
+/* =========================
+   CHECKOUT PAGE
+   ========================= */
+
+.checkout-page {
+  min-height: 100vh;
+  background: #f3ffe8;
+  padding: 32px 16px 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  color: #1d3b2a;
+}
+
+.checkout-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 2.3fr) minmax(0, 1.4fr);
+  gap: 24px;
+}
+
+/* =========================
+   LEFT SIDE
+   ========================= */
+
+.checkout-main {
+  background: #ffffff;
+  border-radius: 26px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.08);
+  padding: 22px 22px 26px;
+}
+
+.checkout-header h1 {
+  margin: 8px 0 4px;
+  font-size: 1.5rem;
+  color: #1d3b2a;
+}
+
+.checkout-header p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #607163;
+}
+
+.checkout-step-pill {
+  display: inline-block;
+  padding: 5px 18px;
+  border-radius: 999px;
+  background: #e5f6d3;
+  color: #264d2c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* =========================
+   FORM (FIXED LABELS)
+   ========================= */
+
+.checkout-form {
+  margin-top: 18px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.form-row.two-col > .form-field,
+.form-row.three-col > .form-field {
+  flex: 1;
+  min-width: 180px;
+}
+
+.form-field label {
+  display: block;
+  font-size: 0.92rem; /* ✅ bigger */
+  font-weight: 700; /* ✅ bolder */
+  color: #1d3b2a; /* ✅ darker */
+  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 12px 3px;
+  border-radius: 12px;
+  border: 1px solid #cbd5c0;
+  font-size: 0.92rem;
+  background: #ffffff;
+  color: #1d3b2a;
+}
+
+.form-field input::placeholder {
+  color: #96a697;
+  font-size: 0.88rem;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: #2f6b34;
+  box-shadow: 0 0 0 3px rgba(47, 107, 52, 0.16);
+}
+
+.form-section-heading {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1d3b2a;
+}
+
+/* =========================
+   SHIPPING CARDS
+   ========================= */
+
+.shipping-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.shipping-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #d5e7cc;
+  background: #f7fff0;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.shipping-card input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #2f6b34;
+}
+
+.shipping-card-active {
+  border-color: #2f6b34;
+  background: #e4f7d8;
+  box-shadow: 0 10px 24px rgba(23, 74, 33, 0.18);
+}
+
+.shipping-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shipping-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1d3b2a;
+}
+
+.shipping-description {
+  font-size: 0.82rem;
+  color: #607163;
+}
+
+.shipping-price {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1d3b2a;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.checkout-continue-btn {
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px 0;
+  border-radius: 999px;
+  border: none;
+  background: #2f6b34;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.05s ease;
+}
+
+.checkout-continue-btn:hover {
+  filter: brightness(0.95);
+  transform: translateY(1px);
+}
+
+/* =========================
+   RIGHT SIDE (SUMMARY)
+   ========================= */
+
+.checkout-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summary-card {
+  background: #ffffff;
+  border-radius: 26px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.08);
+  padding: 18px 18px 20px;
+}
+
+.summary-card h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1d3b2a;
+}
+
+.summary-count {
+  margin: 2px 0 10px;
+  font-size: 0.82rem;
+  color: #607163;
+}
+
+.summary-items {
+  border-radius: 16px;
+  background: #f6ffed;
+  padding: 10px 10px 8px;
+  max-height: 260px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+}
+
+.summary-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #cbdcc3;
+  flex-shrink: 0;
+}
+
+.summary-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.summary-thumb-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #d9e7d1;
+}
+
+.summary-item-info {
+  flex: 1;
+}
+
+.summary-item-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1d3b2a;
+}
+
+.summary-item-meta {
+  font-size: 0.78rem;
+  color: #607163;
+}
+
+.summary-item-price {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1d3b2a;
+}
+
+/* totals */
+
+.summary-totals {
+  margin-top: 8px;
+  border-top: 1px solid #e1eedc;
+  padding-top: 8px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #435649;
+  margin: 2px 0;
+}
+
+.summary-row-total {
+  margin-top: 6px;
+  font-weight: 800;
+  color: #1d3b2a;
+}
+
+/* security box */
+
+.summary-security {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 20px;
+  background: #e2f2d9;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.06);
+}
+
+.security-icon {
+  font-size: 1.2rem;
+}
+
+.security-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1d3b2a;
+}
+
+.security-sub {
+  font-size: 0.8rem;
+  color: #506454;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .checkout-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* =========================
+   PAYMENT SUCCESS PAGE
+   ========================= */
+
+.pay-success-page {
+  min-height: 100vh;
+  background: #f3ffe8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  color: #1d3b2a;
+}
+
+.pay-ticket {
+  max-width: 720px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 26px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+  padding: 24px 24px 22px;
+  position: relative;
+}
+
+.pay-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.pay-icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #e1f5d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pay-icon-check {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2f6b34;
+}
+
+.pay-title {
+  text-align: center;
+  margin: 10px 0 4px;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1d3b2a;
+}
+
+.pay-subtitle {
+  text-align: center;
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+  color: #607163;
+}
+
+.pay-main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.pay-section {
+  background: #f7fff1;
+  border-radius: 18px;
+  border: 1px solid #d7e8cf;
+  padding: 12px 14px 10px;
+}
+
+.pay-section-title {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #234325;
+}
+
+.pay-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+  font-size: 0.85rem;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.pay-label {
+  color: #607163;
+  font-weight: 600;
+}
+
+.pay-value {
+  color: #1e3a28;
+}
+
+.pay-mono {
+  font-family: "SF Mono", ui-monospace, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.82rem;
+}
+
+.pay-strong {
+  font-weight: 700;
+}
+
+.pay-status-pill {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #dff5d5;
+  color: #1f4b25;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.pay-card {
+  margin: 16px 0 10px;
+  padding: 10px 14px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2f6b34, #234824);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+}
+
+.pay-card-chip {
+  width: 34px;
+  height: 26px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #f7f1c7, #e1c77f);
+}
+
+.pay-card-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pay-card-meta {
+  font-size: 0.78rem;
+  opacity: 0.9;
+}
+
+.pay-divider {
+  margin: 10px 0 12px;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent 0,
+    #d8e8d3 40%,
+    #d8e8d3 60%,
+    transparent 100%
+  );
+  background-size: 14px 1px;
+  background-repeat: repeat-x;
+}
+
+.pay-barcode {
+  margin: 0 auto 6px;
+  width: 65%;
+  height: 50px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #1b3321 0,
+    #1b3321 2px,
+    transparent 2px,
+    transparent 5px
+  );
+  opacity: 0.8;
+}
+
+.pay-barcode-text {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  color: #6a7c68;
+}
+
+.pay-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.pay-primary-btn,
+.pay-secondary-btn {
+  min-width: 150px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: filter 0.15s ease, transform 0.05s ease;
+}
+
+.pay-primary-btn {
+  background: #2f6b34;
+  color: #ffffff;
+  border: none;
+}
+
+.pay-secondary-btn {
+  background: #e5f5d8;
+  color: #224127;
+  border: 1px solid #cde4c1;
+}
+
+.pay-primary-btn:hover,
+.pay-secondary-btn:hover {
+  filter: brightness(0.96);
+  transform: translateY(1px);
+}
+
+@media (max-width: 720px) {
+  .pay-ticket {
+    padding: 20px 18px 18px;
+  }
+
+  .pay-main-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+

@@ -1,0 +1,144 @@
+/* PAGE BACKGROUND */
+.faq-page {
+  min-height: 100vh;
+  background: #f3ffe8;
+  padding-bottom: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  color: #234325;
+}
+
+/* HERO – matches Diners / Shop / Explore */
+.faq-header {
+  width: 100%;
+  padding: 40px 16px 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-hero-inner {
+  max-width: 900px;
+  width: 100%;
+  background: #e6f6db;
+  border-radius: 24px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(26, 71, 35, 0.12);
+}
+
+.faq-badge {
+  display: inline-block;
+  padding: 6px 20px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background: #d1ebc3;
+  color: #264d2c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.faq-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #1d3b2a;
+  margin: 0 0 8px;
+}
+
+.faq-subtitle {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #4a5b47;
+  line-height: 1.6;
+}
+
+/* MAIN CONTENT */
+.faq-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.faq-section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #264d2c;
+  margin-bottom: 20px;
+}
+
+/* FAQ LIST / ACCORDION */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Single FAQ item */
+.faq-item {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* Question row (button) */
+.faq-question-row {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-question-row:hover {
+  background: #f4ffed;
+}
+
+.faq-question-text {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #234325;
+  text-align: left;
+}
+
+/* + / − icon */
+.faq-toggle-icon {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #234325;
+  margin-left: 10px;
+}
+
+/* Answer body */
+.faq-answer {
+  padding: 0 16px 14px 16px;
+  border-top: 1px solid #e0edd6;
+  background: #f8fff4;
+}
+
+.faq-answer p {
+  margin: 8px 0 0 0;
+  font-size: 0.9rem;
+  color: #4c614b;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .faq-title {
+    font-size: 1.7rem;
+  }
+
+  .faq-question-row {
+    padding: 12px 14px;
+  }
+
+  .faq-answer {
+    padding: 0 14px 12px 14px;
+  }
+}

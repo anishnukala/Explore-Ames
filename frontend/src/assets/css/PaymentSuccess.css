@@ -1,0 +1,274 @@
+.pay-success-page {
+  min-height: 100vh;
+  background: #f3ffe8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  color: #1d3b2a;
+}
+
+.pay-ticket {
+  position: relative;
+  max-width: 420px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 26px 24px 22px;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+/* ticket cut-outs left/right */
+.pay-ticket::before,
+.pay-ticket::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #f3ffe8;
+}
+
+.pay-ticket::before {
+  left: -11px;
+}
+
+.pay-ticket::after {
+  right: -11px;
+}
+
+/* icon */
+.pay-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.pay-icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #e6f6db;
+  border: 4px solid #f3ffe8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pay-icon-check {
+  font-size: 1.6rem;
+  color: #2f6b34;
+}
+
+/* text */
+.pay-title {
+  margin: 8px 0 4px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1d3b2a;
+}
+
+.pay-subtitle {
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+  color: #607163;
+}
+
+.pay-divider {
+  margin: 10px 0 12px;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent 0,
+    #d7e8cf 40%,
+    #d7e8cf 60%,
+    transparent 100%
+  );
+  background-size: 12px 1px;
+  background-repeat: repeat-x;
+}
+
+/* rows */
+.pay-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.pay-label {
+  color: #607163;
+  font-weight: 600;
+}
+
+.pay-value {
+  color: #1e3a28;
+}
+
+.pay-mono {
+  font-family: "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 0.85rem;
+}
+
+.pay-strong {
+  font-weight: 700;
+}
+
+/* card */
+.pay-card {
+  margin: 14px 0 10px;
+  padding: 10px 12px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2f6b34, #234824);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.pay-card-chip {
+  width: 32px;
+  height: 24px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #f7f1c7, #e1c77f);
+}
+
+.pay-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.pay-card-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pay-card-meta {
+  font-size: 0.78rem;
+  opacity: 0.9;
+}
+
+/* barcode */
+.pay-barcode {
+  margin: 10px auto 4px;
+  width: 70%;
+  height: 46px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #1b3321 0,
+    #1b3321 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  opacity: 0.75;
+}
+
+.pay-barcode-text {
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  color: #607163;
+}
+
+/* button */
+.pay-back-btn {
+  display: block;
+  margin: 16px auto 2px;
+  width: 100%;
+  max-width: 260px;
+  padding: 9px 0;
+  border-radius: 999px;
+  background: #2f6b34;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: filter 0.15s ease, transform 0.05s ease;
+}
+
+.pay-back-btn:hover {
+  filter: brightness(0.95);
+  transform: translateY(1px);
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  .pay-ticket {
+    padding: 22px 18px 18px;
+  }
+
+  .pay-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Actions container */
+.pay-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+/* Base button style */
+.pay-primary-btn,
+.pay-secondary-btn {
+  min-width: 160px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.08s ease, filter 0.15s ease;
+}
+
+/* Primary: Back to Shop */
+.pay-primary-btn {
+  background: #2f6b34;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 10px 24px rgba(47, 107, 52, 0.25);
+}
+
+.pay-primary-btn:hover {
+  filter: brightness(0.95);
+  transform: translateY(1px);
+}
+
+/* Secondary: Return to Home */
+.pay-secondary-btn {
+  background: #e5f5d8;
+  color: #224127;
+  border: 1px solid #cde4c1;
+}
+
+.pay-secondary-btn:hover {
+  filter: brightness(0.97);
+  transform: translateY(1px);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .pay-actions {
+    flex-direction: column;
+  }
+
+  .pay-primary-btn,
+  .pay-secondary-btn {
+    width: 100%;
+  }
+}

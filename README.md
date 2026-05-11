@@ -1,3 +1,4 @@
+<img width="3596" height="2018" alt="WhatsApp Image 2026-04-01 at 01 28 43" src="https://github.com/user-attachments/assets/2a51f580-9dc2-4622-a6ec-eaf09b08b55a" />
 # Final Project – Explore Ames
 
 ## 📚 Table of Contents
@@ -109,4 +110,11 @@ Prajwal Reddy Chenreddy
 
 
 <img width="3598" height="2016" alt="WhatsApp Image 2026-04-01 at 01 28 11" src="https://github.com/user-attachments/assets/cf6cf4aa-0b81-4a3a-93cc-bfe6747e7ac0" />
+<img width="3596" height="2018" alt="WhatsApp Image 2026-04-01 at 01 28 43" src="https://github.com/user-attachments/assets/53f51416-7d08-4959-b266-6b9790d27883" />
+<img width="3404" height="1830" alt="WhatsApp Image 2026-04-01 at 01 30 32" src="https://github.com/user-attachments/assets/1c70198d-d3ab-4aeb-b067-4da6955f5702" />
+<img width="3402" height="1836" alt="WhatsApp Image 2026-04-01 at 01 31 21" src="https://github.com/user-attachments/assets/d19cc54d-0cff-4acd-8a03-420d3703ff4c" />
+<img width="1699" height="910" alt="Screenshot 2026-04-09 at 4 36 54 PM" src="https://github.com/user-attachments/assets/d1cf3f36-6984-4993-aca9-f54635372149" />
+<img width="3402" height="1836" alt="WhatsApp Image 2026-04-01 at 01 31 21" src="https://github.com/user-attachments/assets/84536604-2183-4372-9508-87f75c51b324" />
+
+
 

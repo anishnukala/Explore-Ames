@@ -96,6 +96,7 @@ Anish Reddy Nukala
 - Admin page development
 - Home page development
 - Shop page implementation
+- MongoDB schema design and database integration
 - Styling, UX improvements, testing, and debugging
 - Documentation writing and report organization
 
@@ -103,7 +104,6 @@ Prajwal Reddy Chenreddy
 - Login functionality
 - Diners and Explore Us modules
 - Backend CRUD routes
-- MongoDB schema design and database integration
 - Styling, UX improvements, testing, and debugging
 - Documentation writing and report organization
 
